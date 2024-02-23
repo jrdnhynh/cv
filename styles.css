@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.resume-content {
+    padding: 20px;
+}
+
+.resume-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.resume-content p {
+    font-size: 16px;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.resume-content section {
+    margin-top: 30px;
+}
+
+.resume-content section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.resume-content section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.resume-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.resume-content li {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.icons-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icons-container a {
+    display: inline-block;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.icons-container i {
+    font-size: 25px; 
+}
+
+.contact-info {
+    display: flex;
+    align-items: center; 
+}
+
+.copy-icon {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #777;
+}
+
+.copy-icon:hover {
+    color: #333;
+}
+
+#skills {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* grid styles */
+.course-container {
+    display: grid;
+    grid-template-columns: 1fr .5fr 0.25fr; /* three columns */
+    grid-gap: 10px; /* gap between grid items */
+}
+
+.label {
+    font-weight: bold; /* bold label for each column */
+    padding: 10px; /* padding for labels */
+    transition: all 0.3s ease;
+}
+
+.course,
+.technologies,
+.grade {
+    font-size: 16px;
+    color: #333;
+    padding: 10px; /* add padding */
+    border: 1px solid #ccc; /* add border */
+    transition: all 0.3s ease;
+}
+
+.grade {
+    text-align: center; /* center align grades */
+    transition: all 0.3s ease;
+}
+
+
+li a {
+    color: #333;
+}
+
+/* center align ban icon */
+.technologies i.fa-ban {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* term 1 styling */
+.term1 {
+    background-color: #e0f7fa; /* light blue */
+}
+
+/* term 2 styling */
+.term2 {
+    background-color: #f0f4c3; /* light green */
+}
+
+/* term 3 styling */
+.term3 {
+    background-color: #ffe0b2; /* light orange */
+}
+
+/* term 4 styling */
+.term4 {
+    background-color: #f8bbd0; /* light pink */
+}
+
+/* key styling */
+.key {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.key-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.key-label {
+    font-size: 16px;
+}
+
+/* back button */
+.back-button {
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 40px;
+}
