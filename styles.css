@@ -142,21 +142,25 @@ li a {
 /* term 1 styling */
 .term1 {
     background-color: #e0f7fa; /* light blue */
+    border: 1px solid #ccc; /* add border */
 }
 
 /* term 2 styling */
 .term2 {
     background-color: #f0f4c3; /* light green */
+    border: 1px solid #ccc; /* add border */
 }
 
 /* term 3 styling */
 .term3 {
     background-color: #ffe0b2; /* light orange */
+    border: 1px solid #ccc; /* add border */
 }
 
 /* term 4 styling */
 .term4 {
     background-color: #f8bbd0; /* light pink */
+    border: 1px solid #ccc; /* add border */
 }
 
 /* key styling */
