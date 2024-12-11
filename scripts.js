@@ -1,11 +1,11 @@
 "use strict";
 
 $(document).ready(() => {
-    // fade in animation for the resume container 1.2 seconds
-    $('.resume-container').fadeIn(1200);
+    // fade in animation for the cv container 1.2 seconds
+    $('.cv-container').fadeIn(1200);
 
     // mouse hover function
-    $('.resume-content p, .resume-content h1, .resume-content h2, .resume-content li, .label, .course, .technologies, .grade').hover(
+    $('.cv-content p, .cv-content h1, .cv-content h2, .cv-content li, .label, .course, .technologies, .grade').hover(
         function() {
             $(this).css('background-color', 'rgba(0, 0, 149, 0.2)'); // change background color to purple
         },
