@@ -102,7 +102,7 @@ body {
     margin-bottom: 0.3125rem; /* 5px */
 }
 
-/* Grid styles */
+/* grid styles */
 .course-container {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.25fr; /* three columns */
