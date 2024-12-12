@@ -79,7 +79,7 @@ body {
 
 .contact-info {
     display: flex;
-    flex-direction: column; /* adjust for smaller screens */
+    flex-direction: column; /* Adjust for smaller screens */
     align-items: flex-start;
     gap: 0.3125rem; /* 5px */
 }
@@ -102,10 +102,10 @@ body {
     margin-bottom: 0.3125rem; /* 5px */
 }
 
-/* grid styles */
+/* Grid styles */
 .course-container {
     display: grid;
-    grid-template-columns: 1fr; /* single column on small screens */
+    grid-template-columns: 1fr 0.5fr 0.25fr; /* three columns */
     grid-gap: 0.625rem; /* 10px */
 }
 
@@ -138,14 +138,14 @@ li a {
     color: #333;
 }
 
-/* center align ban icon */
+/* Center align ban icon */
 .technologies i.fa-ban {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* term styling */
+/* Term styling */
 .term1 {
     background-color: #e0f7fa;
     border: 0.0625rem solid #ccc; /* 1px */
@@ -166,7 +166,7 @@ li a {
     border: 0.0625rem solid #ccc; /* 1px */
 }
 
-/* key styling */
+/* Key styling */
 .key {
     display: flex;
     flex-wrap: wrap;
@@ -190,7 +190,7 @@ li a {
     font-size: 1rem; /* 16px */
 }
 
-/* back button */
+/* Back button */
 .back-button {
     top: 1.25rem; /* 20px */
     left: 1.25rem; /* 20px */
@@ -199,7 +199,7 @@ li a {
     font-size: 2.5rem; /* 40px */
 }
 
-/* responsive styles */
+/* Responsive styles */
 @media (max-width: 768px) {
     .cv-container {
         padding: 1rem;
@@ -220,7 +220,7 @@ li a {
     }
 
     .course-container {
-        grid-template-columns: 1fr; /* stack grid items vertically */
+        grid-template-columns: 1fr 1fr; /* Two columns for medium screens */
     }
 
     .contact-info {
@@ -251,6 +251,10 @@ li a {
     .cv-content p,
     .cv-content section p {
         font-size: 0.75rem; /* 12px */
+    }
+
+    .course-container {
+        grid-template-columns: 1fr; /* Single column for small screens */
     }
 
     .icons-container a {
