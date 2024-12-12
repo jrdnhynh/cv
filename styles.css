@@ -202,11 +202,14 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    body {
-        font-size: 0.875rem !important; /* 14px */
+    .cv-container {
+        font-size: 0.875rem; /* 14px */
     }
-    h1 {
-        font-size: 1.5rem !important; /* 24px */
+    .cv-content h1 {
+        font-size: 1.5rem; /* 24px */
+    }
+    .cv-content h2 {
+        font-size: 1.25rem; /* 20px */
     }
     .course-container {
         grid-template-columns: 1fr 1fr 1fr; /* keep three columns */
@@ -229,11 +232,14 @@ body {
 }
 
 @media (max-width: 480px) {
-    body {
-        font-size: 0.75rem !important; /* 12px */
+    .cv-container {
+        font-size: 0.75rem ; /* 12px */
     }
-    h1 {
-        font-size: 1.25rem !important; /* 20px */
+    .cv-content h1 {
+        font-size: 1.25rem; /* 20px */
+    }
+    .cv-content h2 {
+        font-size: 1rem; /* 16px */
     }
     .course-container {
         grid-template-columns: 1fr 1fr 1fr; /* Keep three columns */
