@@ -208,14 +208,14 @@ body {
     .key-label,
     .cv-content p,
     .cv-content section p {
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.875rem !important; /* 14px */
     }
     .cv-content h1 {
-        font-size: 1.5rem; /* 24px */
+        font-size: 1.5rem !important; /* 24px */
     }
     .cv-content section h2,
     h2 {
-        font-size: 1.25rem; /* 20px */
+        font-size: 1.25rem !important; /* 20px */
     }
     .course-container {
         grid-template-columns: 1fr 1fr 1fr; /* keep three columns */
@@ -244,14 +244,14 @@ body {
     .key-label,
     .cv-content p,
     .cv-content section p {
-        font-size: 0.75rem ; /* 12px */
+        font-size: 0.75rem !important; /* 12px */
     }
     .cv-content h1 {
-        font-size: 1.25rem; /* 20px */
+        font-size: 1.25rem !important; /* 20px */
     }
     .cv-content section h2,
     h2 {
-        font-size: 1rem; /* 16px */
+        font-size: 1rem !important; /* 16px */
     }
     .course-container {
         grid-template-columns: 1fr 1fr 1fr; /* Keep three columns */
