@@ -7,7 +7,7 @@ body {
 
 .cv-container {
     max-width: 50rem; /* 800px */
-    margin: 1rem auto;
+    margin: 1rem auto 1rem;
     background-color: #fff;
     padding: 2rem;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
@@ -19,8 +19,14 @@ body {
 }
 
 .cv-content h1 {
-    font-size: 2.25rem; /* Default 36px */
+    font-size: 2.25rem; /* 36px */
     margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.cv-content p {
+    font-size: 1rem; /* 16px */
+    color: #666;
     transition: all 0.3s ease;
 }
 
@@ -29,30 +35,85 @@ body {
 }
 
 .cv-content section h2 {
-    font-size: 1.5rem; /* Default 24px */
+    font-size: 1.5rem; /* 24px */
     color: #333;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
 }
 
 .cv-content section p {
-    font-size: 1.125rem; /* Default 18px */
+    font-size: 1.125rem; /* 18px */
     color: #666;
     line-height: 1.5;
     margin: 0.25rem 0;
 }
 
+.cv-content ul {
+    list-style-type: disc;
+    margin-left: 0.5rem;
+}
+
+.cv-content li {
+    font-size: 0.9375rem; /* 15px */
+    color: #333;
+    margin-bottom: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.icons-container {
+    text-align: center;
+    margin-top: 0rem;
+}
+
+.icons-container a {
+    display: inline-block;
+    margin-right: 0.3125rem; /* 5px */
+    width: 2.5rem; /* 40px */
+    height: 2.5rem;
+    background-size: cover;
+}
+
+.icons-container i {
+    font-size: 1.5625rem; /* 25px */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Adjust for smaller screens */
+    align-items: flex-start;
+    gap: 0.3125rem; /* 5px */
+}
+
+.copy-icon {
+    border: none;
+    background: none;
+    font-size: 0.75rem; /* 12px */
+    cursor: pointer;
+    color: #777;
+}
+
+.copy-icon:hover {
+    color: #333;
+}
+
+#skills {
+    font-size: 0.9375rem; /* 15px */
+    color: #333;
+    margin-bottom: 0.3125rem; /* 5px */
+}
+
+/* Grid styles */
 .course-container {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.25fr; /* three columns */
     grid-gap: 0.625rem; /* 10px */
     overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 .course-container > div {
-    display: inline-block;
-    min-width: fit-content; /* Allow div to resize based on content */
+    display: inline-block; /* Ensure items respect horizontal scrolling */
+    min-width: 33%; /* Ensure each column fits nicely within the grid */
 }
 
 .label {
@@ -69,58 +130,105 @@ body {
     padding: 0.625rem; /* 10px */
     border: 0.0625rem solid #ccc; /* 1px */
     transition: all 0.3s ease;
-    word-wrap: break-word; /* Ensure long words wrap */
-    text-align: left; /* Align text properly */
+    min-width: 8rem; /* Ensure a consistent width for columns */
 }
 
 .grade {
     text-align: center;
+    transition: all 0.3s ease;
 }
 
-.term1,
-.term2,
-.term3,
-.term4 {
-    display: flex; /* Enable flexible resizing */
-    flex-wrap: wrap; /* Allow wrapping of content */
-    justify-content: flex-start; /* Align text to the start */
-    align-items: center; /* Vertically align items */
-    background-color: #e0f7fa; /* Example for term1 */
+.technologies {
+    text-align: center;
+}
+
+/* Center align ban icon */
+.technologies i.fa-ban {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Term styling */
+.term1 {
+    background-color: #e0f7fa;
     border: 0.0625rem solid #ccc; /* 1px */
-    padding: 0.5rem; /* Ensure content has padding */
-    min-width: fit-content; /* Adjust the width dynamically */
-    box-sizing: border-box; /* Include padding in width calculations */
 }
 
-/* Adjustments for h1 and grid on smaller screens */
-@media (max-width: 768px) {
-    .cv-content h1 {
-        font-size: 1.75rem; /* Smaller font for medium screens */
-    }
+.term2 {
+    background-color: #f0f4c3;
+    border: 0.0625rem solid #ccc; /* 1px */
+}
 
+.term3 {
+    background-color: #ffe0b2;
+    border: 0.0625rem solid #ccc; /* 1px */
+}
+
+.term4 {
+    background-color: #f8bbd0;
+    border: 0.0625rem solid #ccc; /* 1px */
+}
+
+/* Key styling */
+.key {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key-item {
+    display: flex;
+    align-items: center;
+    margin-right: 1.25rem; /* 20px */
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+.key-color {
+    width: 1.25rem; /* 20px */
+    height: 1.25rem;
+    margin-right: 0.625rem; /* 10px */
+    border-radius: 50%;
+}
+
+.key-label {
+    font-size: 1rem; /* 16px */
+}
+
+/* Back button */
+.back-button {
+    top: 1.25rem; /* 20px */
+    left: 1.25rem; /* 20px */
+    text-decoration: none;
+    color: #000000;
+    font-size: 2.5rem; /* 40px */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
     .course-container {
         grid-template-columns: 1fr 1fr 1fr; /* Keep three columns */
         overflow-x: auto; /* Allow scrolling for smaller screens */
-        padding: 1rem;
+        padding: 1rem; /* Add some padding for scrollable area */
+    }
+    
+    .course-container::-webkit-scrollbar {
+        height: 0.5rem; /* Customize scrollbar height */
+    }
+
+    .course-container::-webkit-scrollbar-thumb {
+        background: #ccc; /* Scrollbar thumb color */
+        border-radius: 0.25rem; /* Rounded edges */
+    }
+
+    .course-container::-webkit-scrollbar-track {
+        background: #f0f0f0; /* Scrollbar track color */
     }
 }
 
 @media (max-width: 480px) {
-    .cv-content h1 {
-        font-size: 1.5rem; /* Smaller font for small screens */
-    }
-
     .course-container {
         grid-template-columns: 1fr 1fr 1fr; /* Keep three columns */
-        overflow-x: auto; /* Allow scrolling */
-        padding: 0.5rem;
-    }
-
-    .term1,
-    .term2,
-    .term3,
-    .term4 {
-        font-size: 0.875rem; /* Slightly smaller text for small screens */
+        overflow-x: auto;
         padding: 0.5rem;
     }
 }
