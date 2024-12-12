@@ -225,6 +225,7 @@ body {
     
     .course-container::-webkit-scrollbar {
         height: 0.5rem; /* customize scrollbar height */
+        margin: 1rem 1rem;
     }
 
     .course-container::-webkit-scrollbar-thumb {
