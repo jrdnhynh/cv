@@ -139,14 +139,14 @@ body {
     text-align: center;
 }
 
-/* Center align ban icon */
+/* center align ban icon */
 .technologies i.fa-ban {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Term styling */
+/* term styling */
 .term1 {
     background-color: #e0f7fa;
     border: 0.0625rem solid #ccc; /* 1px */
@@ -167,7 +167,7 @@ body {
     border: 0.0625rem solid #ccc; /* 1px */
 }
 
-/* Key styling */
+/* key styling */
 .key {
     display: flex;
     flex-wrap: wrap;
@@ -191,7 +191,7 @@ body {
     font-size: 1rem; /* 16px */
 }
 
-/* Back button */
+/* nack button */
 .back-button {
     top: 1.25rem; /* 20px */
     left: 1.25rem; /* 20px */
@@ -200,7 +200,7 @@ body {
     font-size: 2.5rem; /* 40px */
 }
 
-/* Responsive styles */
+/* responsive styles */
 @media (max-width: 768px) {
     .course,
     .technologies,
@@ -208,7 +208,7 @@ body {
     .key-label,
     .cv-content p,
     .cv-content li,
-    .cv-content section p, {
+    .cv-content section p {
         font-size: 0.875rem !important; /* 14px */
     }
     .cv-content h1 {
@@ -245,7 +245,7 @@ body {
     .key-label,
     .cv-content p,
     .cv-content li,
-    .cv-content section p, {
+    .cv-content section p {
         font-size: 0.75rem !important; /* 12px */
     }
     .cv-content h1 {
@@ -256,7 +256,7 @@ body {
         font-size: 1rem !important; /* 16px */
     }
     .course-container {
-        grid-template-columns: 1fr 1fr 1fr; /* Keep three columns */
+        grid-template-columns: 1fr 1fr 1fr; /* keep three columns */
         overflow-x: auto;
         padding: 0.5rem;
     }
