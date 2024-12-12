@@ -217,6 +217,9 @@ body {
     h2 {
         font-size: 1.25rem !important; /* 20px */
     }
+    .cv-container {
+        margin: 1rem 1rem;
+    }
     .course-container {
         grid-template-columns: 1fr 1fr 1fr; /* keep three columns */
         overflow-x: auto; /* allow scrolling for smaller screens */
@@ -225,7 +228,6 @@ body {
     
     .course-container::-webkit-scrollbar {
         height: 0.5rem; /* customize scrollbar height */
-        margin: 1rem 1rem;
     }
 
     .course-container::-webkit-scrollbar-thumb {
@@ -254,6 +256,9 @@ body {
     .cv-content section h2,
     h2 {
         font-size: 1rem !important; /* 16px */
+    }
+    .cv-container {
+        margin: .75rem .75rem;
     }
     .course-container {
         grid-template-columns: 1fr 1fr 1fr; /* keep three columns */
