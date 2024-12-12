@@ -202,9 +202,7 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .course,
-    .technologies,
-    .grade {
+    * {
         font-size: 0.875rem; /* 14px */
     }
     .cv-content h1 {
@@ -234,9 +232,7 @@ body {
 }
 
 @media (max-width: 480px) {
-    .course,
-    .technologies,
-    .grade {
+    * {
         font-size: 0.75rem ; /* 12px */
     }
     .cv-content h1 {
