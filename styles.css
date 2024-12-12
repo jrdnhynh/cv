@@ -205,6 +205,7 @@ body {
     .course,
     .technologies,
     .grade,
+    .gpa,
     .key-label,
     .cv-content p {
         font-size: 0.875rem; /* 14px */
@@ -240,6 +241,7 @@ body {
     .course,
     .technologies,
     .grade,
+    .gpa,
     .key-label,
     .cv-content p {
         font-size: 0.75rem ; /* 12px */
