@@ -118,7 +118,6 @@ body {
 
 .label {
     font-weight: bold;
-    padding: 0.625rem; /* 10px */
     transition: all 0.3s ease;
 }
 
@@ -130,7 +129,6 @@ body {
     padding: 0.625rem; /* 10px */
     border: 0.0625rem solid #ccc; /* 1px */
     transition: all 0.3s ease;
-    min-width: 8rem; /* Ensure a consistent width for columns */
 }
 
 .grade {
