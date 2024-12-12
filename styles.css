@@ -79,7 +79,7 @@ body {
 
 .contact-info {
     display: flex;
-    flex-direction: column; /* Adjust for smaller screens */
+    flex-direction: column; /* adjust for smaller screens */
     align-items: flex-start;
     gap: 0.3125rem; /* 5px */
 }
@@ -107,13 +107,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.25fr; /* three columns */
     grid-gap: 0.625rem; /* 10px */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* enable horizontal scrolling */
+    white-space: nowrap; /* prevent wrapping */
 }
 
 .course-container > div {
-    display: inline-block; /* Ensure items respect horizontal scrolling */
-    min-width: 33%; /* Ensure each column fits nicely within the grid */
+    display: inline-block; /* ensure items respect horizontal scrolling */
 }
 
 .label {
@@ -203,27 +202,39 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    body {
+        font-size: 0.875rem; /* 14px */
+    }
+    h1 {
+        font-size: 1.5rem; /* 24px */
+    }
     .course-container {
-        grid-template-columns: 1fr 1fr 1fr; /* Keep three columns */
-        overflow-x: auto; /* Allow scrolling for smaller screens */
-        padding: 1rem; /* Add some padding for scrollable area */
+        grid-template-columns: 1fr 1fr 1fr; /* keep three columns */
+        overflow-x: auto; /* allow scrolling for smaller screens */
+        padding: 1rem; /* add some padding for scrollable area */
     }
     
     .course-container::-webkit-scrollbar {
-        height: 0.5rem; /* Customize scrollbar height */
+        height: 0.5rem; /* customize scrollbar height */
     }
 
     .course-container::-webkit-scrollbar-thumb {
-        background: #ccc; /* Scrollbar thumb color */
+        background: #ccc; /* scrollbar thumb color */
         border-radius: 0.25rem; /* Rounded edges */
     }
 
     .course-container::-webkit-scrollbar-track {
-        background: #f0f0f0; /* Scrollbar track color */
+        background: #f0f0f0; /* scrollbar track color */
     }
 }
 
 @media (max-width: 480px) {
+    body {
+        font-size: 0.75rem; /* 12px */
+    }
+    h1 {
+        font-size: 1.25rem; /* 20px */
+    }
     .course-container {
         grid-template-columns: 1fr 1fr 1fr; /* Keep three columns */
         overflow-x: auto;
