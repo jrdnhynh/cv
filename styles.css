@@ -205,9 +205,9 @@ body {
     .course,
     .technologies,
     .grade,
-    .gpa,
     .key-label,
-    .cv-content p {
+    .cv-content p,
+    .cv-content section p {
         font-size: 0.875rem; /* 14px */
     }
     .cv-content h1 {
@@ -241,9 +241,9 @@ body {
     .course,
     .technologies,
     .grade,
-    .gpa,
     .key-label,
-    .cv-content p {
+    .cv-content p,
+    .cv-content section p {
         font-size: 0.75rem ; /* 12px */
     }
     .cv-content h1 {
