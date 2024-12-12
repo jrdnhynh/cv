@@ -104,16 +104,32 @@ body {
 
 /* Grid styles */
 .course-container {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 0.25fr; /* three columns */
-    grid-gap: 0.625rem; /* 10px */
+    display: flex; /* Use flexbox instead of grid for better horizontal scroll handling */
+    gap: 10px; /* Space between items */
     overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent wrapping */
+    white-space: nowrap; /* Prevent wrapping of text */
 }
 
 .course-container > div {
     display: inline-block; /* Ensure items respect horizontal scrolling */
-    min-width: 33%; /* Ensure each column fits nicely within the grid */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* Background for better visibility */
+    text-align: center; /* Optional: Adjust text alignment */
+    white-space: nowrap; /* Prevent text wrapping within the div */
+}
+
+.course-container::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar height for aesthetics */
+}
+
+.course-container::-webkit-scrollbar-thumb {
+    background: #ccc; /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded scrollbar edges */
+}
+
+.course-container::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Scrollbar track color */
 }
 
 .label {
