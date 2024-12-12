@@ -202,13 +202,13 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .li,
     .course,
     .technologies,
     .grade,
     .key-label,
     .cv-content p,
-    .cv-content section p {
+    .cv-content li,
+    .cv-content section p, {
         font-size: 0.875rem !important; /* 14px */
     }
     .cv-content h1 {
@@ -239,13 +239,13 @@ body {
 }
 
 @media (max-width: 480px) {
-    .li,
     .course,
     .technologies,
     .grade,
     .key-label,
     .cv-content p,
-    .cv-content section p {
+    .cv-content li,
+    .cv-content section p, {
         font-size: 0.75rem !important; /* 12px */
     }
     .cv-content h1 {
