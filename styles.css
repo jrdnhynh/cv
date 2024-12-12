@@ -202,6 +202,7 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    .li,
     .course,
     .technologies,
     .grade,
@@ -238,6 +239,7 @@ body {
 }
 
 @media (max-width: 480px) {
+    .li,
     .course,
     .technologies,
     .grade,
