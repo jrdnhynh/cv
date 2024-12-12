@@ -107,6 +107,13 @@ body {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.25fr; /* three columns */
     grid-gap: 0.625rem; /* 10px */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.course-container > div {
+    display: inline-block; /* Ensure items respect horizontal scrolling */
+    min-width: 33%; /* Ensure each column fits nicely within the grid */
 }
 
 .label {
@@ -123,6 +130,7 @@ body {
     padding: 0.625rem; /* 10px */
     border: 0.0625rem solid #ccc; /* 1px */
     transition: all 0.3s ease;
+    min-width: 8rem; /* Ensure a consistent width for columns */
 }
 
 .grade {
@@ -132,10 +140,6 @@ body {
 
 .technologies {
     text-align: center;
-}
-
-li a {
-    color: #333;
 }
 
 /* Center align ban icon */
@@ -201,68 +205,30 @@ li a {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .cv-container {
-        padding: 1rem;
-        margin: 1rem;
-    }
-
-    .cv-content h1 {
-        font-size: 1.75rem; /* 28px */
-    }
-
-    .cv-content section h2 {
-        font-size: 1.25rem; /* 20px */
-    }
-
-    .cv-content p,
-    .cv-content section p {
-        font-size: 0.875rem; /* 14px */
-    }
-
     .course-container {
-        grid-template-columns: 1fr 1fr; /* Two columns for medium screens */
+        grid-template-columns: 1fr 1fr 1fr; /* Keep three columns */
+        overflow-x: auto; /* Allow scrolling for smaller screens */
+        padding: 1rem; /* Add some padding for scrollable area */
+    }
+    
+    .course-container::-webkit-scrollbar {
+        height: 0.5rem; /* Customize scrollbar height */
     }
 
-    .contact-info {
-        gap: 0.625rem; /* 10px */
-        align-items: flex-start;
+    .course-container::-webkit-scrollbar-thumb {
+        background: #ccc; /* Scrollbar thumb color */
+        border-radius: 0.25rem; /* Rounded edges */
     }
 
-    .icons-container a {
-        margin-right: 0.625rem; /* 10px */
-        width: 2.1875rem; /* 35px */
-        height: 2.1875rem;
-    }
-
-    .back-button {
-        font-size: 1.875rem; /* 30px */
+    .course-container::-webkit-scrollbar-track {
+        background: #f0f0f0; /* Scrollbar track color */
     }
 }
 
 @media (max-width: 480px) {
-    .cv-content h1 {
-        font-size: 1.5rem; /* 24px */
-    }
-
-    .cv-content section h2 {
-        font-size: 1.125rem; /* 18px */
-    }
-
-    .cv-content p,
-    .cv-content section p {
-        font-size: 0.75rem; /* 12px */
-    }
-
     .course-container {
-        grid-template-columns: 1fr; /* Single column for small screens */
-    }
-
-    .icons-container a {
-        width: 1.875rem; /* 30px */
-        height: 1.875rem;
-    }
-
-    .back-button {
-        font-size: 1.5625rem; /* 25px */
+        grid-template-columns: 1fr 1fr 1fr; /* Keep three columns */
+        overflow-x: auto;
+        padding: 0.5rem;
     }
 }
