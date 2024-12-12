@@ -205,7 +205,8 @@ body {
     .course,
     .technologies,
     .grade,
-    .key-label {
+    .key-label,
+    .cv-content p {
         font-size: 0.875rem; /* 14px */
     }
     .cv-content h1 {
@@ -239,7 +240,8 @@ body {
     .course,
     .technologies,
     .grade,
-    .key-label {
+    .key-label,
+    .cv-content p {
         font-size: 0.75rem ; /* 12px */
     }
     .cv-content h1 {
