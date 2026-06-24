@@ -36,7 +36,6 @@ p a:hover {
     background-color: #fff;
     padding: 2rem;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
-    display: none;
 }
 
 .cv-content {
@@ -302,7 +301,7 @@ p a:hover {
 
     .course-container::-webkit-scrollbar-thumb {
         background: #ccc; /* scrollbar thumb color */
-        border-radius: 0.25rem; /* Rounded edges */
+        border-radius: 0.25rem; /* rounded edges */
     }
 
     .course-container::-webkit-scrollbar-track {
@@ -335,4 +334,26 @@ p a:hover {
         overflow-x: auto;
         padding: 0.5rem;
     }
+}
+
+/* barba */
+[data-barba="wrapper"] {
+    position: relative;
+}
+
+/* each page overlays instead of replacing */
+[data-barba="container"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* prevent layout jump */
+html, body {
+    height: 100%;
+}
+
+.cv-container {
+    will-change: opacity, filter;
 }
