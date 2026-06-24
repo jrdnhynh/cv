@@ -56,7 +56,7 @@ barba.init({
         {
             name: "fade-blur",
 
-            sync: true, // ✅ KEY: runs enter + leave at same time
+            sync: true, // runs enter + leave at same time
 
             async leave(data) {
                 const $el = $(data.current.container).find('.cv-container');
@@ -79,7 +79,7 @@ barba.init({
                 const $container = $(data.next.container);
                 const $el = $container.find('.cv-container');
 
-                // ✅ stack new page ON TOP of old one
+                // stack new page ON TOP of old one
                 $container.css({
                     position: 'absolute',
                     top: 0,
@@ -92,7 +92,7 @@ barba.init({
                     zIndex: 1
                 });
 
-                // ✅ start hidden
+                // start hidden
                 $el.css({
                     opacity: 0,
                     filter: 'blur(6px)'
