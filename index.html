@@ -5,89 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Jordan Huynh</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <script src="https://kit.fontawesome.com/2e9d41b2f0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/styles.css">
+
+    <script src="https://kit.fontawesome.com/2e9d41b2f0.js" crossorigin="anonymous" defer></script>
+
 </head>
-<body>
+<body data-barba="wrapper">
+    <div data-barba="container" data-barba-namespace="home">
+        <div class="cv-container">
+            <div class="cv-content">
+                <!-- cv content start -->
+                <h1><a href="about.html">Jordan Huynh</a></h1>
+                <p>Web/Marketing Developer & Computer Science Student</p>
 
-<div class="cv-container">
-    <div class="cv-content">
-        <!-- cv content start -->
-        <h1><a href="about.html">Jordan Huynh</a></h1>
-        <p>Web &amp; Software Development Student</p>
+                <!-- skills -->
+                <section>
+                    <h2>Skills</h2>
+                    <p id="skills">HTML | CSS | JavaScript | C++ | Java | Python | C# | PHP | SQL | Sitecore | WordPress | Adobe CC</p>
+                </section>
 
-        <!-- skills -->
-        <section>
-            <h2>Skills</h2>
-            <p id="skills">HTML | CSS | JavaScript | C++ | Java | Python | C# | PHP | SQL | Sitecore | WordPress | Adobe CC</p>
-        </section>
+                <!-- education -->
+                <section>
+                    <h2>Education</h2>
+                    <p><strong>Georgia Institute of Technology</strong>
+                    <ul>
+                        <li><strong><a href="education/computerscience.html" style="color: #78B7AA;">Computer Science (M.S.)</a></strong> &#124; <em>Anticip. Graduation Date: May 2028</em></li>
+                        <li style="list-style-type: none;"><em>Specialization: Human-Computer Interaction</em></li>
+                    </ul>
+                    <p><strong>Fort Hays State University</strong>
+                    <ul>
+                        <li><strong><a href="education/int.html" style="color: #C17A9D;">Information Networking & Telecommunications (B.S.)</a></strong> &#124; <em>Anticip. Graduation Date: May 2026</em></li>
+                        <li style="list-style-type: none;"><em>Concentration: Web & Mobile App Development</em></li>
+                    </ul>
+                    <p><strong>Butler Community College</strong>
+                    <ul>
+                        <li><strong><a href="education/softwaredevelopment.html" style="color: #D29C6A">Software Development (A.A.S.)</a></strong> &#124; <em>Degree Date: Jul 2025</em></li>
+                        <li><strong><a href="education/webdevelopment.html" style="color: #A8B94F">Web Development (A.A.S.)</a></strong> &#124; <em>Degree Date: May 2024</em></li>
+                        <li><strong><a href="education/digitalmedia.html" style="color: #81B6C7">Digital Media (A.A.S.)</a></strong> &#124; <em>Degree Date: Dec 2022</em></li>
+                    </ul>
+                </section>
 
-        <!-- education -->
-        <section>
-            <h2>Education</h2>
-            <p><strong>Georgia Institute of Technology</strong>
-            <ul>
-                <li><strong><a href="education/csms.html" style="color: #78B7AA;">Computer Science (MS)</a></strong> &#124; <em>Anticip. Graduation Date: May 2028</em></li>
-                <li style="list-style-type: none;"><em>Specialization: Human-Computer Interaction</em></li>
-            </ul>
-            <p><strong>Fort Hays State University</strong>
-            <ul>
-                <li><strong><a href="education/int.html" style="color: #C17A9D;">Information Networking & Telecommunications (BS)</a></strong> &#124; <em>Anticip. Graduation Date: May 2026</em></li>
-                <li style="list-style-type: none;"><em>Concentration: Web & Mobile App Development</em></li>
-            </ul>
-            <p><strong>Butler Community College</strong>
-            <ul>
-                <li><strong><a href="education/softwaredevelopment.html" style="color: #D29C6A">Software Development (AAS)</a></strong> &#124; <em>Degree Date: Jul 2025</em></li>
-                <li><strong><a href="education/webdevelopment.html" style="color: #A8B94F">Web Development (AAS)</a></strong> &#124; <em>Degree Date: May 2024</em></li>
-                <li><strong><a href="education/digitalmedia.html" style="color: #81B6C7">Digital Media (AAS)</a></strong> &#124; <em>Degree Date: Dec 2022</em></li>
-            </ul>
-        </section>
+                <!-- work experience -->
+                <section>
+                    <h2>Professional Work Experience</h2>
+                    <p><strong>Textron Aviation</strong> &#124; <em>Digital Marketing Developer</em> &#124; Jun 2024 - Present</p>
+                    <ul>
+                        <li>Built and deployed 100+ production web updates and 10+ responsive, accessible pages across desktop and mobile.</li>
+                        <li>Implemented structured data (schema markup to improve search visibility and enable rich results.</li>
+                        <li>Leveraged SEO and analytics tools (Semrush, GA4) to drive performance improvements and increase organic traffic.</li>
+                        <li>Developed product launch pages for M2, CJ3, and CJ4 Gen3 aircraft programs.</li>
+                        <li>Maintained and developed content across enterprise aviation brands including txtav.com, cessna.com, beechcraft.com, trusimulation.com, and Pipistrel using Sitecore and WordPress CMS.</li>
+                    </ul>
+                    <p style="margin-bottom: 20px;"><strong>Shure Incorporated</strong> &#124; <em>Digital Marketing Software Intern</em> &#124; May 2025 - Aug 2025</p>
+                    <ul>
+                        <li>Launched 5 social campaigns for MOTIV Mix app, reaching thousands of users and boosting awareness.</li>
+                        <li>Designed and ran re-engagement email campaign in Salesforce for dormant users; strong open/click rates.</li>
+                        <li>Authored and published 2 educational blog posts on features, driving readers and feature adoption.</li>
+                        <li>Conducted competitor analysis of podcasting software and developed 3-model monetization strategy.</li>
+                    </ul>
+                    <p><strong>Meritrust Credit Union</strong> &#124; <em>Marketing Automation Intern</em> &#124; May 2023 - Aug 2023</p>
+                    <ul>
+                        <li>Drive email marketing success through effective utilization of Adobe Marketo.</li>
+                        <li>Enhance data collection by implementing TMS (Google Tag Manager) on the credit union website.</li>
+                        <li>Create engaging and informative blog content using the CMS (WordPress) platform.</li>
+                    </ul>
+                </section>
 
-        <!-- work experience -->
-        <section>
-            <h2>Professional Work Experience</h2>
-            <p><strong>Textron Aviation</strong> &#124; <em>Digital Marketing Developer</em> &#124; Jun 2024 - Present</p>
-            <ul>
-                <li>Built and deployed 100+ production web updates and 10+ responsive, accessible pages across desktop and mobile.</li>
-                <li>Implemented structured data (schema markup to improve search visibility and enable rich results.</li>
-                <li>Leveraged SEO and analytics tools (Semrush, GA4) to drive performance improvements and increase organic traffic.</li>
-                <li>Developed product launch pages for M2, CJ3, and CJ4 Gen3 aircraft programs.</li>
-                <li>Maintained and developed content across enterprise aviation brands including txtav.com, cessna.com, beechcraft.com, trusimulation.com, and Pipistrel using Sitecore and WordPress CMS.</li>
-            </ul>
-            <p style="margin-bottom: 20px;"><strong>Shure Incorporated</strong> &#124; <em>Digital Marketing Software Intern</em> &#124; May 2025 - Aug 2025</p>
-            <ul>
-                <li>Launched 5 social campaigns for MOTIV Mix app, reaching thousands of users and boosting awareness.</li>
-                <li>Designed and ran re-engagement email campaign in Salesforce for dormant users; strong open/click rates.</li>
-                <li>Authored and published 2 educational blog posts on features, driving readers and feature adoption.</li>
-                <li>Conducted competitor analysis of podcasting software and developed 3-model monetization strategy.</li>
-            </ul>
-            <p><strong>Meritrust Credit Union</strong> &#124; <em>Marketing Automation Intern</em> &#124; May 2023 - Aug 2023</p>
-            <ul>
-                <li>Drive email marketing success through effective utilization of Adobe Marketo.</li>
-                <li>Enhance data collection by implementing TMS (Google Tag Manager) on the credit union website.</li>
-                <li>Create engaging and informative blog content using the CMS (WordPress) platform.</li>
-            </ul>
-        </section>
-
-        <!-- contact -->
-        <section>
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p id="email">jrdnhynh@gmail.com</p>
+                <!-- contact -->
+                <section>
+                    <h2>Contact</h2>
+                    <div class="contact-info">
+                        <p id="email">jrdnhynh@gmail.com</p>
+                    </div>
+                </section>        
             </div>
-        </section>        
+
+            <!-- social icons and email -->
+            <div class="icons-container">
+                <a href="https://www.linkedin.com/in/sjordanhuynh/" target="_blank" class="linkedin-icon" id="linkedin-icon"><i class="fab fa-linkedin" style="color: #000000;"></i></a>
+                <a href="https://github.com/jrdnhynh" target="_blank" class="github-icon" id="github-icon"><i class="fab fa-github" style="color: #000000;"></i></a>
+                <button id="copy-email" class="copy-icon"><i class="fa solid fa-envelope" style="color: #000000;"></i></button>
+            </div>
+            
+        </div>
     </div>
 
-    <!-- social icons and email -->
-    <div class="icons-container">
-        <a href="https://www.linkedin.com/in/sjordanhuynh/" target="_blank" class="linkedin-icon" id="linkedin-icon"><i class="fab fa-linkedin" style="color: #000000;"></i></a>
-        <a href="https://github.com/jrdnhynh" target="_blank" class="github-icon" id="github-icon"><i class="fab fa-github" style="color: #000000;"></i></a>
-        <button id="copy-email" class="copy-icon"><i class="fa solid fa-envelope" style="color: #000000;"></i></button>
-    </div>
-    
-</div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
 <script src="scripts.js"></script>
 </body>
 </html>
